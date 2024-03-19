@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { Link } from "react-router-dom";
 function Form() {
   // const[name,Setname]=useState("name");
   return (
@@ -80,7 +81,8 @@ function Form() {
                   className="form-control"
                 />
               </div>
-              <button className="btn">Submit</button>
+              <Link to="/"> 
+              <button className="btn">Submit</button></Link>
             </div>
           </div>
           v

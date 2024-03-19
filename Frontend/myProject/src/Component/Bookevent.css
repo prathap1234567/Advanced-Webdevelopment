@@ -18,7 +18,7 @@
 }
 
 .image-item {
-  background-color: #ccc; /* Placeholder color */
+  background-color: #ccc;
   height: 200px; /* Adjust image height */
   position: relative; /* Add position relative for positioning event names */
   cursor: pointer; /* Change cursor to pointer on hover */

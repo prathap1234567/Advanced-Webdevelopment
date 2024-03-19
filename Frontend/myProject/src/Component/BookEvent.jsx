@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./Bookevent.css";
 import Navbar from "../Component/Navbar";
-import EventDetails from "../Component/EventDetails";
+
 function Bookevent() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
