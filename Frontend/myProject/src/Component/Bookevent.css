@@ -13,7 +13,7 @@
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 5 columns */
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
