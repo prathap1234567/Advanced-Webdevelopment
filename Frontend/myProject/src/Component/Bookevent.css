@@ -1,0 +1,89 @@
+/* BookEventPage.css */
+
+.book-event-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(195, 218, 218);
+}
+
+.event-title {
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 columns */
+  grid-gap: 20px;
+}
+
+.image-item {
+  background-color: #ccc; /* Placeholder color */
+  height: 200px; /* Adjust image height */
+  position: relative; /* Add position relative for positioning event names */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* Unique class names for each image */
+.item1 {
+  background-image: url("https://images.pexels.com/photos/5725981/pexels-photo-5725981.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.item2 {
+  background-image: url("https://images.pexels.com/photos/3172566/pexels-photo-3172566.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.item3 {
+  background-image: url("https://images.pexels.com/photos/7180617/pexels-photo-7180617.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.item4 {
+  background-image: url("https://images.pexels.com/photos/3419692/pexels-photo-3419692.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.item5 {
+  background-image: url("https://i.pinimg.com/originals/69/c3/03/69c30385c2e2ab1b27064cecd4902235.jpg");
+}
+.item6 {
+  background-image: url("https://i.pinimg.com/originals/4e/5c/90/4e5c9060ebc64da507db5a07c35376b8.jpg");
+}
+.item7 {
+  background-image: url("https://i.pinimg.com/originals/9d/89/9b/9d899b3159c4153995d2d0b8fc30d3e7.jpg");
+}
+.item8 {
+  background-image: url("https://cdn.diys.com/wp-content/uploads/2021/04/DIY-Birthday-decor-1.jpg");
+}
+.item9 {
+  background-image: url("https://www.togetherv.com/blog/wp-content/uploads/2021/04/shutterstock_2062979228.jpg");
+}
+
+/* Additional styling for images */
+.image-item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+/* Style for event name */
+.event-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  /* opacity: 0; Hide event name by default */
+  transition: opacity 0.3s; /* Add transition effect for smooth visibility change */
+}
+
+.image-item:hover .event-name {
+  opacity: 1; /* Show event name on hover */
+}
+
+.image-item:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+}

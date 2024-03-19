@@ -1,5 +1,120 @@
-@media (min-width: 1025px) {
-    .h-custom-2 {
-      height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  background: #1c1c1c;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+  opacity: 0.8;
+  /* width: 400px; */
+  height: 500px;
+  padding: 50px 70px;
+  background: #f0f0f3;
+  border-radius: 9px 0 0 9px;
+  box-shadow: 0 2px 4px -2 rgba(0, 0, 0, 0.6);
+
+  form {
+    display: grid;
+    grid-template-rows: 50px 300px 50px;
+
+    fieldset {
+      margin-top: 30px;
+    }
+
+    h1 {
+      color: #020f16;
+      font-size: 32px;
+      font-style: inherit;
+      text-align: center;
+    }
+
+    .name,
+    .password {
+      display: flex;
+    }
+
+    .name input:last-of-type,
+    .password input:last-of-type {
+      margin-left: 10px;
+    }
+
+    .email p {
+      color: #a9a9b7;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      display: block;
+      color: #a9a9b7;
+      margin-top: 15px;
+      background: none;
+      border-radius: 6px;
+      border: 1px solid #393b63;
+    }
+
+    input:focus {
+      color: #020b0f;
+      border: 1px solid #7159c1;
+    }
+
+    input::placeholder {
+      color: #a9a9b7;
+    }
+
+    button {
+      width: 100%;
+      height: 30px;
+      color: #f9fbfc;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #7159c1;
+      text-transform: uppercase;
+      transition: background 100ms ease-in-out;
+
+      &:hover {
+        background: #500dd7;
       }
     }
+  }
+}
+
+aside {
+  width: 400px;
+  height: 510px;
+  transition: transform 1s ease-in-out;
+  animation: moveRight 3s;
+  border-radius: 0 9px 9px 0;
+  animation-fill-mode: forwards;
+  box-shadow: 0 2px 4px -2 rgba(0, 0, 0, 0.6);
+  background: url(https://images.pexels.com/photos/6210746/pexels-photo-6210746.jpeg?auto=compress&cs=tinysrgb&w=600)
+    no-repeat center center / cover;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
