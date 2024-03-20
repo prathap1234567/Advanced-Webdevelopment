@@ -9,6 +9,7 @@ import Form from "./Component/Form";
 import AdminPage from "./Component/AdminPage";
 import Bookevent from "./Component/BookEvent";
 import EventDetails from "./Component/EventDetails";
+import ViewBookedevent from "./Component/ViewBookedEvent";
 
 // import EventRegistrationForm from "./Component/EventRegistrationForm";
 
@@ -23,9 +24,9 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
-            
             <Route path="/form" element={<Form />} />
             <Route path="/admin" element={<AdminPage />} />
+            <Route path="/event" element={<ViewBookedevent />} />
             <Route path="/book" element={<Bookevent/>} />
             <Route path="/eventdetails/:id" element={<EventDetails/>} />
             
