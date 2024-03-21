@@ -12,7 +12,7 @@ const AdminPage = () => {
           id="mainNav"
         >
           <a className="navbar-brand" href="index.html">
-            DreamDay
+                DreamDay
           </a>
           <button
             className="navbar-toggler navbar-toggler-right"
@@ -46,22 +46,29 @@ const AdminPage = () => {
                 title="Dashboard"
               >
                 <br />
-                <Link to="/crud" className="nav-link" href="index.html">
-                  <span className="nav-link-text">Actions</span>
+                <Link to="/event" className="nav-link" href="index.html">
+                  <span className="nav-link-text">Event</span>
                 </Link>
+                <Link to="/food" className="nav-link" href="index.html">
+                  <span className="nav-link-text">Food Details</span>
+                </Link>
+                <Link to="/themeadmin" className="nav-link" href="index.html">
+                  <span className="nav-link-text">Theme</span>
+                </Link>
+                <a
+                className="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <i className="fa fa-fw fa-sign-out" />
+                <Link to="/"> Logout</Link>
+              </a>
               </li>
             </ul>
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  <i className="fa fa-fw fa-sign-out" />
-                 <Link to = '/'> Logout</Link>
-                </a>
+               
               </li>
             </ul>
           </div>

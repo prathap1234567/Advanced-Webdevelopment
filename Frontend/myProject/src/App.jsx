@@ -10,6 +10,8 @@ import AdminPage from "./Component/AdminPage";
 import Bookevent from "./Component/BookEvent";
 import EventDetails from "./Component/EventDetails";
 import ViewBookedevent from "./Component/ViewBookedEvent";
+import Foodtable from "./Component/Foodtable";
+import ThemeAdmin from "./Component/ThemeAdmin";
 
 // import EventRegistrationForm from "./Component/EventRegistrationForm";
 
@@ -28,6 +30,8 @@ function App() {
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/event" element={<ViewBookedevent />} />
             <Route path="/book" element={<Bookevent/>} />
+            <Route path="/food" element={<Foodtable/>} />
+            <Route path="/themeadmin" element={<ThemeAdmin/>} />
             <Route path="/eventdetails/:id" element={<EventDetails/>} />
             
           </Routes>

@@ -1,5 +1,10 @@
+
 package com.example.Repository;
 
-public class UserRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.Model.UserDto;
+
+public interface UserRepository extends JpaRepository<User, Long> {
     
 }
