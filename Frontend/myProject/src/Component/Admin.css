@@ -155,6 +155,7 @@ body.fixed-nav {
   .dropdown-menu
   > .dropdown-item
   > .dropdown-message {
+    
   overflow: hidden;
   max-width: none;
   text-overflow: ellipsis;
