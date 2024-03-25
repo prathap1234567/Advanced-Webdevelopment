@@ -43,7 +43,7 @@ public class eveController {
    
    
     @PostMapping("/aevent")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAuthority('user')")
     public void postAllTheProducts(@RequestBody EventEntity e) {
         rep.save(e);
     }

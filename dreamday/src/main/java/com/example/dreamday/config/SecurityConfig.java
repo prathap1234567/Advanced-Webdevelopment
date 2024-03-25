@@ -8,7 +8,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
-
+//import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -55,7 +55,7 @@ public class SecurityConfig {
                         .requestMatchers("/products/welcome", "/products/new", "/products/authenticate", "/swagger-ui/**",
                                 "/swagger-ui.html/", "/services/event",
                                 "/v3/api-docs/**").permitAll())
-                .authorizeHttpRequests(requests -> requests.requestMatchers("/products/**", "/events/**")
+                .authorizeHttpRequests(requests -> requests.requestMatchers("/products/**", "/events/","/food/*")
                         .authenticated())
                 .sessionManagement(management -> management
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))

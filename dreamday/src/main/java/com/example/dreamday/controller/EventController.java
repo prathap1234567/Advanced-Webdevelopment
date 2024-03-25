@@ -28,7 +28,7 @@ public class EventController {
     }
    
     @PostMapping("/addevent")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAuthority('admin')")
     public void postAllTheProducts(@RequestBody Event e) {
         rep.save(e);
     }
